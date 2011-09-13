@@ -17,7 +17,7 @@ It might take 1-2 seconds more to send it but it is worth it.
 
 == Installation ==
 
-1. Upload `Xmail` folder to the `/wp-content/plugins/` directory
+1. Upload `xmail-the-right-way` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Read the Xmail page in Settings menu in wp-admin
 
