@@ -50,6 +50,6 @@ If you are useing another wp_mail replacer then Xmail will not activate if anoth
 
 == Markdown ==
 
-* Your emails will be be marked as SPAM
-* If your emails do not even arrive to Yahoo! or MSN now they will
-* This is the way Google, yahoo! and MSN best like emails to come to them
+* Your emails will no longer be marked as SPAM.
+* If your emails do not even arrive to Yahoo! or MSN with Xmail they will.
+* This is the way Google, Yahoo! and MSN best like emails to come to them.
