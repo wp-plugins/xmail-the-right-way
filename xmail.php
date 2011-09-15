@@ -21,8 +21,8 @@ License: GPL v.2
   
   # WP version check
   global $wp_version;
-  $exit_msg='Plugin requires WordPress 3.1 or newer.<a href="http://wordpress.org/" target="_blank">Please update!</a>';
-  if(version_compare ($wp_version,"3.1","<")){exit($exit_msg);}
+  $exit_msg='Plugin requires WordPress 3.0 or newer.<a href="http://wordpress.org/" target="_blank">Please update!</a>';
+  if(version_compare ($wp_version,"3.0","<")){exit($exit_msg);}
   
   class XmailBaby{
     
