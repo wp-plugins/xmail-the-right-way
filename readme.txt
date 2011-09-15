@@ -5,9 +5,11 @@ Tested up to: 3.2.1
 Stable tag: trunk
 Contributors: Marian Vlad-Marian (eyemedia@gmail.com), gotic
 
+Replaces wp_mail and sends email the right way so it does not get flagged as SPAM.
+
 == Description ==
 
-Send email the right way so it does not get flagged as SPAM. 
+Replaces wp_mail and sends email the right way so it does not get flagged as SPAM.
 Most servers use a diffrent IP address to send email from then the IP of your domain and thus your emails get into SPAM folders or not att all in some cases of Yahoo! and MSN. 
 This will send emails from your domain IP address. 
 It might take 1-2 seconds more to send it but it is worth it.
