@@ -1,6 +1,6 @@
 === Plugin Name ===
 Tags: email, mail, smtp, spam, wp_mail, e-mail, solution, fix, problem, mx, correct, right, way
-Requires at least: 3.1
+Requires at least: 3.0
 Tested up to: 3.2.1
 Stable tag: trunk
 Contributors: Marian Vlad-Marian (eyemedia@gmail.com), gotic
@@ -34,14 +34,16 @@ If you are useing another wp_mail replacer then Xmail will not activate if anoth
 
 == Changelog ==
 
-= 1.0 =
+= 1.00 =
 * Initial release
+
+= 1.01 =
+* Tested and set to work starting WP 3.0 UP
 
 
 == Upgrade Notice ==
 
-       Initial release
-       No previous version
+* Run regular update. Nothing will be affected!
 
 == Screenshots ==
 
