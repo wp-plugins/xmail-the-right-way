@@ -1,5 +1,5 @@
 === Plugin Name ===
-Tags: email, mail, smtp, spam, wp_mail, e-mail, solution, fix, problem, mx, correct, right, way
+Tags: email, mail, smtp, spam, wp_mail, e-mail, solution, fix, problem, mx, correct
 Requires at least: 3.0
 Tested up to: 3.2.1
 Stable tag: trunk
@@ -47,8 +47,7 @@ If you are useing another wp_mail replacer then Xmail will not activate if anoth
 
 == Screenshots ==
 
-       No screenshots are available.
-       This is just under the hood plugin.
+http://plugins.svn.wordpress.org/xmail-the-right-way/trunk/spf.png
 
 == Markdown ==
 
