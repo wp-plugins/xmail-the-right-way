@@ -47,7 +47,7 @@ If you are useing another wp_mail replacer then Xmail will not activate if anoth
 
 == Screenshots ==
 
-http://plugins.svn.wordpress.org/xmail-the-right-way/trunk/spf.png
+Behind the mailing system.
 
 == Markdown ==
 
