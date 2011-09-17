@@ -47,7 +47,7 @@ If you are useing another wp_mail replacer then Xmail will not activate if anoth
 
 == Screenshots ==
 
-Behind the mailing system.
+1. Behind the mailing system.
 
 == Markdown ==
 
