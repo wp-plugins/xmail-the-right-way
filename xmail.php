@@ -13,7 +13,7 @@ License: GPL v.2
     Version 2, June 1991
 
  Copyright (C) 2011 endd.ro
-  
+
 */
   
   # DEBUG MODE
