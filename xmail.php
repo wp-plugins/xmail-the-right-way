@@ -427,7 +427,7 @@ License: GPL v.2
 		<td width="10%" valign="top" style="background-color:#EEF5FB; padding:10px;"><strong style="color:red;">Upgrade</strong></td>
 		<td width="90%" style="background-color:#EEEEEE; padding:10px; color:red;">
 			Upgrade to Professional version and you get a fully configurable email sender tool that will help you get all your email sending problems fixed.
-			<br/><b>The professional version is FREE!</b> All we ask in return is a credit link.
+			<br/><b>The professional version is FREE!</b> All we ask in return is a credit link somwhere on your site.
 			<br/>
 			<br/>With the professional version you get:
 			<br/><i>&nbsp;- Customize the sender email address and name.</i>
