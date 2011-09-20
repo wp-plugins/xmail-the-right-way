@@ -9,10 +9,10 @@ Replaces wp_mail and sends email the right way so it does not get flagged as SPA
 
 == Description ==
 
-Replaces wp_mail and sends email the right way so it does not get flagged as SPAM.
-Most servers use a diffrent IP address to send email from then the IP of your domain and thus your emails get into SPAM folders or not att all in some cases of Yahoo! and MSN. 
-This will send emails from your domain IP address. 
-It might take 1-2 seconds more to send it but it is worth it.
+All webmasters experience the problem of their emails landing in their users spam folders, including our own! 
+So we decided to develop a simple solution to fix this wide-spread annoyance. 
+After a long development period, we have produced an effective method of sending emails which complies 
+in full with all guidelines and security requirements of email providers such as Google, Yahoo & MSN. 
 
 
 == Installation ==
@@ -25,12 +25,19 @@ It might take 1-2 seconds more to send it but it is worth it.
 
 == Frequently Asked Questions ==
 
-Does this have anny affect on other emil sengind plugins?
+  So what ix Xmail?
+Xmail is a PHP class that can send an email in 3 diffrent ways:
+1. via the old fashion PHP standard function called mail()
+2. via a SMTP account (one of the most popular alternatives)
+3. direct connection to the receiver MX server (the optimal way)
 
-No.
-If those plugins use wp_mail they will send via Xmail from now on.
-If they do not they will ahve no affect.
-If you are useing another wp_mail replacer then Xmail will not activate if another wp_mail is detected.
+
+  Why is this the best way?
+Each server that hosts websites has multiple IP's.
+In 99% of cases, the (email) main server IP is different from the IP used for the domain itself, so your domain has one IP and the emails you send go out from another (main server IP). You will probably share an email server with many other users, and if these users are unscrupulous and send out SPAM, you will suffer as well because the main server IP you use will lose credibility and become untrusted by the email providers named above. This will result in your emails never reaching your users' inboxes.
+However, some website servers have an option to send out emails from the main IP, but only SMTP allows for this. STMP is an email setup enabled by the Xmail plugin.
+Should that option be incompatible, the only thing left is to use the MX method which does not rely on any other service in the server. It's pure PHP and will always use your site's IP. This MX method is also enabled by the Xmail plugin.
+Note: You should also contact your hosting provider and ask him to activate Domain Keys and SPF for your domain.
 
 == Changelog ==
 
