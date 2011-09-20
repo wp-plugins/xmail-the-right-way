@@ -3,7 +3,7 @@ Tags: email, mail, smtp, spam, wp_mail, e-mail, solution, fix, problem, mx
 Requires at least: 3.0
 Tested up to: 3.2.1
 Stable tag: trunk
-Contributors: Marian Vlad-Marian (eyemedia@gmail.com), gotic
+Contributors: tntu, gotic
 
 Replaces wp_mail and sends email the right way so it does not get flagged as SPAM.
 
