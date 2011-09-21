@@ -25,14 +25,16 @@ in full with all guidelines and security requirements of email providers such as
 
 == Frequently Asked Questions ==
 
-  So what ix Xmail?
+* So what ix Xmail?
+
 Xmail is a PHP class that can send an email in 3 diffrent ways:
 1. via the old fashion PHP standard function called mail()
 2. via a SMTP account (one of the most popular alternatives)
 3. direct connection to the receiver MX server (the optimal way)
 
 
-  Why is this the best way?
+* Why is this the best way?
+
 Each server that hosts websites has multiple IP's.
 In 99% of cases, the (email) main server IP is different from the IP used for the domain itself, so your domain has one IP and the emails you send go out from another (main server IP). You will probably share an email server with many other users, and if these users are unscrupulous and send out SPAM, you will suffer as well because the main server IP you use will lose credibility and become untrusted by the email providers named above. This will result in your emails never reaching your users' inboxes.
 However, some website servers have an option to send out emails from the main IP, but only SMTP allows for this. STMP is an email setup enabled by the Xmail plugin.
