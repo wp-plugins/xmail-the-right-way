@@ -49,6 +49,10 @@ Note: You should also contact your hosting provider and ask him to activate Doma
 = 1.01 =
 * Tested and set to work starting WP 3.0 UP
 
+= 1.03 =
+* Added SIZE transmision
+* Added redundancy to mail() if socket fails
+
 
 == Upgrade Notice ==
 
