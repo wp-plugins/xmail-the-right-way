@@ -3,7 +3,7 @@
 Plugin Name: Xmail - The Right Way
 Plugin URI: http://www.endd.eu/xmail-email-the-right-way/
 Description: Send email the right way so it does not get flagged as SPAM. Most servers use a diffrent IP address to send email from then the IP of your domain and thus your emails get into SPAM folders or not att all in some cases of Yahoo! and MSN. This will send emails from your domain IP address. It might take 1-2 seconds more to send it but it is worth it.
-Version: 1.01
+Version: 1.03
 Author: Marian Vlad-Marian
 Author URI: http://www.lantian.eu/
 License: GPL v.2
@@ -78,11 +78,14 @@ License: GPL v.2
       $message .= "</html>\n\n";
       $message .= "--".$boundary2."--\n\n";
       
+      $size = 0;
       if(is_array($attachments)) {
         foreach($attachments AS $file_url) {
           if(is_file($file_url)) {
             $file_name = pathinfo($file_url, PATHINFO_BASENAME);
             $file_type = $this->find_mime(pathinfo($file_url, PATHINFO_EXTENSION));
+            
+            $size = $size + filesize($file_url);
             
             # ATTACHMENT
             $message .= "--".$boundary1."\n";
@@ -110,7 +113,9 @@ License: GPL v.2
       $headers .= "MIME-Version: 1.0\n";
       $headers .= "Content-Type: multipart/mixed;\n      boundary=\"$boundary1\"\n";
       
-      return $this->sokmail($to, $subject, $message, $headers);
+      if($this->sokmail($to, $subject, $message, $headers)) return true;
+      else if(mail($to, $subject, $message, $headers)) return true;
+      else return false;
     }
     
     # send mail directly to destination MX server
@@ -135,6 +140,12 @@ License: GPL v.2
       # email to
       fputs($socket, "RCPT TO: <" . $to . ">" . $this->line);
       if($this->parse_response($socket, 250, "RCPT TO") != 250) { fclose($socket); return false; }
+       
+      # size of attachments
+      if($size != 0){
+        fputs($socket, "SIZE=" . $size . $this->line);
+        if($this->parse_response($socket, 250, "SIZE") != 250) { fclose($socket); return false; }
+      }
        
 			# send data start command
 			fputs($socket, "DATA" . $this->line);
