@@ -53,6 +53,9 @@ Note: You should also contact your hosting provider and ask him to activate Doma
 * Added SIZE transmision
 * Added redundancy to mail() if socket fails
 
+= 1.04 =
+* Removed SIZE transmision cause most servers do not support it
+
 
 == Upgrade Notice ==
 

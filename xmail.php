@@ -78,14 +78,11 @@ License: GPL v.2
       $message .= "</html>\n\n";
       $message .= "--".$boundary2."--\n\n";
       
-      $size = 0;
       if(is_array($attachments)) {
         foreach($attachments AS $file_url) {
           if(is_file($file_url)) {
             $file_name = pathinfo($file_url, PATHINFO_BASENAME);
             $file_type = $this->find_mime(pathinfo($file_url, PATHINFO_EXTENSION));
-            
-            $size = $size + filesize($file_url);
             
             # ATTACHMENT
             $message .= "--".$boundary1."\n";
@@ -140,12 +137,6 @@ License: GPL v.2
       # email to
       fputs($socket, "RCPT TO: <" . $to . ">" . $this->line);
       if($this->parse_response($socket, 250, "RCPT TO") != 250) { fclose($socket); return false; }
-       
-      # size of attachments
-      if($size != 0){
-        fputs($socket, "SIZE=" . $size . $this->line);
-        if($this->parse_response($socket, 250, "SIZE") != 250) { fclose($socket); return false; }
-      }
        
 			# send data start command
 			fputs($socket, "DATA" . $this->line);
