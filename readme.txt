@@ -1,9 +1,9 @@
 === Plugin Name ===
 Tags: email, mail, smtp, spam, wp_mail, e-mail, solution, fix, problem, mx
 Requires at least: 3.0
-Tested up to: 3.2.1
+Tested up to: 3.3.1
 Stable tag: trunk
-Contributors: tntu, gotic
+Contributors: tntu
 
 Replaces wp_mail and sends email the right way so it does not get flagged as SPAM.
 
@@ -55,6 +55,9 @@ Note: You should also contact your hosting provider and ask him to activate Doma
 
 = 1.04 =
 * Removed SIZE transmision cause most servers do not support it
+
+= 1.05 =
+* Tested and working on WP 3.3.1
 
 
 == Upgrade Notice ==
