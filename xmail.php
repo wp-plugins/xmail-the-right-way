@@ -417,30 +417,13 @@ License: GPL v.2
 	<tr>
 		<td width="10%" valign="top" style="background-color:#EEF5FB; padding:10px;"><strong>License</strong></td>
 		<td width="90%" style="background-color:#EEEEEE; padding:10px;">
-			<b>Copyright (C) <?php echo date(Y); ?> endd.ro</b>
+			<b>Copyright (C) <?php echo date(Y); ?> Lantian GROUP</b>
 			<br/><b>Attribution-NonCommercial-ShareAlike</b>
 			<br/>(CC BY-NC-SA)
 			<br/>
 			<br/>This license lets others remix, tweak, and build upon this work non-commercially, as long as they credit the author and license their new creations under the identical terms.
 		</td>
 	</tr>
-
-	<tr>
-		<td width="10%" valign="top" style="background-color:#EEF5FB; padding:10px;"><strong style="color:red;">Upgrade</strong></td>
-		<td width="90%" style="background-color:#EEEEEE; padding:10px; color:red;">
-			Upgrade to Professional version and you get a fully configurable email sender tool that will help you get all your email sending problems fixed.
-			<br/><b>The professional version is FREE!</b> All we ask in return is a credit link somwhere on your site.
-			<br/>
-			<br/>With the professional version you get:
-			<br/><i>&nbsp;- Customize the sender email address and name.</i>
-			<br/><i>&nbsp;- Create a HTML template to be used in all your emails. This will give you the flexibility to design your emails.</i>
-			<br/><i>&nbsp;- Options to select the way you send emails: mail [php method], SMTP [via an email account], MX [Xmail way]</i>
-			<br/><i>&nbsp;- Run in test mode to see what way is better for you.</i>
-			<br/>
-			<br/><a href="http://www.endd.eu/xmail-email-the-right-way/" target="_blank">CLICK HERE TO UPGRADE</a>
-    </td>
-	</tr>
-	
 </table>
 <?php
     echo '  </div>';
