@@ -418,10 +418,7 @@ License: GPL v.2
 		<td width="10%" valign="top" style="background-color:#EEF5FB; padding:10px;"><strong>License</strong></td>
 		<td width="90%" style="background-color:#EEEEEE; padding:10px;">
 			<b>Copyright (C) <?php echo date(Y); ?> Lantian GROUP</b>
-			<br/><b>Attribution-NonCommercial-ShareAlike</b>
-			<br/>(CC BY-NC-SA)
-			<br/>
-			<br/>This license lets others remix, tweak, and build upon this work non-commercially, as long as they credit the author and license their new creations under the identical terms.
+			<br/>License: <b>GPL v2</b>
 		</td>
 	</tr>
 </table>
