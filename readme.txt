@@ -1,7 +1,7 @@
 === Plugin Name ===
-Tags: email, mail, smtp, spam, wp_mail, e-mail, solution, fix, problem, mx
+Tags: email, mail, smtp, spam, wp_mail, e-mail, solution, fix, problem, mx, delivery, inbox
 Requires at least: 3.0
-Tested up to: 3.3.1
+Tested up to: 3.9
 Stable tag: trunk
 Contributors: tntu
 
@@ -58,6 +58,11 @@ Note: You should also contact your hosting provider and ask him to activate Doma
 
 = 1.05 =
 * Tested and working on WP 3.3.1
+
+= 1.10 =
+* Fixed headers received as array
+* Standardized line endings
+* Minor fixez
 
 
 == Upgrade Notice ==
