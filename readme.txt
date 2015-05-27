@@ -1,7 +1,7 @@
 === Plugin Name ===
 Tags: email, mail, smtp, spam, wp_mail, e-mail, solution, fix, problem, mx, delivery, inbox
 Requires at least: 3.0
-Tested up to: 4.0.1
+Tested up to: 4.2.2
 Stable tag: trunk
 Contributors: tntu
 

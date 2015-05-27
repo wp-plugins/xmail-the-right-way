@@ -3,7 +3,7 @@
 Plugin Name: Xmail - The Right Way
 Description: Send email the right way so it does not get flagged as SPAM. Most servers use a diffrent IP address to send email from then the IP of your domain and thus your emails get into SPAM folders or not att all in some cases of Yahoo! and MSN. This will send emails from your domain IP address. It might take 1-2 seconds more to send it but it is worth it.
 Version: 1.10
-Author: Marian Vlad-Marian
+Author: Vlad-Marian MARIAN
 Author URI: http://www.transilvlad.com/
 License: GPL v.2
 
